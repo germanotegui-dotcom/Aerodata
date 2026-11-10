@@ -1,0 +1,15 @@
+AeroData – Gestión (versión que funciona sin internet)
+
+Archivos que se suben a GitHub (todos los de esta carpeta):
+  index.html, config.js, firebase.js, sw.js, manifest.json,
+  icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png
+
+config.js ya tiene la configuración de tu Firebase (aerodata-df1d8).
+
+Las reglas de seguridad (quién puede ver los datos) NO van a GitHub:
+se pegan en Firebase > Firestore Database > Reglas. Están en el chat.
+
+Cuando haya una versión nueva de la app:
+  1) reemplazá index.html en GitHub
+  2) en sw.js cambiá "aerodata-v1" por "aerodata-v2" (v3, v4…)
+  Así los teléfonos descargan la versión nueva la próxima vez que abran la app con internet.
